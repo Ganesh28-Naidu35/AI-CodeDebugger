@@ -1,0 +1,142 @@
+/* Dark theme styles */
+:root {
+    --primary: #6C63FF;
+    --background: #121212;
+    --surface: #1E1E1E;
+    --on-background: #E0E0E0;
+    --on-surface: #FFFFFF;
+    --error: #CF6679;
+    --success: #4CAF50;
+    --warning: #FF9800;
+    --info: #2196F3;
+}
+
+/* Main container styling */
+.stApp {
+    background-color: var(--background);
+    color: var(--on-background);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Text colors */
+h1, h2, h3, h4, h5, h6, p, label, .stMarkdown, .stText {
+    color: var(--on-background) !important;
+}
+
+/* Header styling */
+h1 {
+    color: var(--primary) !important;
+    margin-bottom: 0.5rem;
+}
+
+/* Button styling */
+.stButton>button {
+    border: none;
+    border-radius: 8px;
+    background-color: var(--primary);
+    color: white;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.stButton>button:hover {
+    background-color: #564fc7;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* File uploader styling */
+.stFileUploader>div>div {
+    border: 2px dashed #444;
+    border-radius: 8px;
+    padding: 2rem;
+    background-color: var(--surface);
+}
+
+/* Code block styling */
+.stCodeBlock {
+    border-radius: 8px;
+    background-color: #2D2D2D !important;
+    border: 1px solid #444;
+}
+
+/* Tab styling */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 10px;
+    background-color: var(--surface);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.stTabs [data-baseweb="tab"] {
+    border-radius: 8px !important;
+    padding: 0.5rem 1rem !important;
+    background-color: #2D2D2D !important;
+    color: var(--on-surface) !important;
+    transition: all 0.3s ease !important;
+}
+
+.stTabs [aria-selected="true"] {
+    background-color: var(--primary) !important;
+    color: white !important;
+}
+
+/* Text area styling */
+.stTextArea>textarea {
+    border-radius: 8px !important;
+    border: 1px solid #444 !important;
+    background-color: var(--surface) !important;
+    color: var(--on-surface) !important;
+}
+
+/* Progress bar styling */
+.stProgress>div>div>div {
+    background-color: var(--primary) !important;
+}
+
+/* Alert boxes */
+.stAlert.stError {
+    border-radius: 8px;
+    background-color: #2D1E1E;
+    border-left: 4px solid var(--error);
+}
+
+.stAlert.stSuccess {
+    border-radius: 8px;
+    background-color: #1E2D1E;
+    border-left: 4px solid var(--success);
+}
+
+.stAlert.stInfo {
+    border-radius: 8px;
+    background-color: #1E1E2D;
+    border-left: 4px solid var(--info);
+}
+
+.stAlert.stWarning {
+    border-radius: 8px;
+    background-color: #2D2D1E;
+    border-left: 4px solid var(--warning);
+}
+
+/* Select box styling */
+.stSelectbox>div>div {
+    background-color: var(--surface);
+    color: var(--on-surface);
+    border: 1px solid #444;
+    border-radius: 8px;
+}
+
+/* Expander styling */
+.stExpander {
+    background-color: var(--surface);
+    border: 1px solid #444;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+/* Divider styling */
+hr {
+    border-color: #444 !important;
+}
